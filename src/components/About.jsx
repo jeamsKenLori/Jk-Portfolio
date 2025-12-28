@@ -172,7 +172,7 @@ export default function About() {
                   >
                     <div className="aspect-[4/5] overflow-hidden">
                       <img
-                        src="/images/grad_pic.jpg"
+                        src={`${import.meta.env.BASE_URL}images/grad_pic.jpg`}
                         alt="Portrait / Graduation photo"
                         className="
                           w-full h-full object-cover transform-gpu
