@@ -30,7 +30,7 @@ Error generating stack: `+a.message+`
                       transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]\r
                       hover:scale-[1.04] hover:shadow-2xl hover:shadow-sky-200/40\r
                       dark:hover:shadow-sky-900/40\r
-                    `,style:{backfaceVisibility:"hidden"},children:s.jsx("div",{className:"aspect-[4/5] overflow-hidden",children:s.jsx("img",{src:"{`${import.meta.env.BASE_URL}images/grad_pic.jpg",alt:"Portrait / Graduation photo",className:`\r
+                    `,style:{backfaceVisibility:"hidden"},children:s.jsx("div",{className:"aspect-[4/5] overflow-hidden",children:s.jsx("img",{src:"/Jk-Portfolio/images/grad_pic.png",alt:"Portrait / Graduation photo",className:`\r
                           w-full h-full object-cover transform-gpu\r
                           transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]\r
                           group-hover:scale-110\r
