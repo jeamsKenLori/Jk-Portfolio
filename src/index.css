@@ -1,0 +1,39 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this */
+
+/* (optional) your theme tokens */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* smooth color transitions */
+* { @apply transition-colors duration-200; }
+
+/* smooth anchor jumps */
+html {
+  scroll-behavior: smooth;
+}
+
+/* account for sticky navbar so headings don't hide under it */
+[id] {
+  scroll-margin-top: 88px; /* tweak to your navbar height */
+}
+
+@keyframes bg-pan {
+  0% {
+    transform: scale(1.1) translateX(0);
+  }
+  50% {
+    transform: scale(1.15) translateX(-6px);
+  }
+  100% {
+    transform: scale(1.1) translateX(0);
+  }
+}
+
+.bg-pan {
+  animation: bg-pan 12s ease-in-out infinite;
+}
